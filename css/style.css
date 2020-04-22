@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@300;400;700;900&display=swap');
 
 body {
-  max-width: 1140px;
+  max-width: 1110px;
   margin: 0 auto;
   font-family: Roboto;
 }
@@ -13,7 +13,7 @@ body {
 }
 
 .header { 
-  padding: 26px 13px;
+  padding: 26px 0;
 }
 .header__logo,
 .menu__link { 
@@ -82,8 +82,13 @@ h1::first-letter {
 
 
 .product__position { 
-  padding: 15px;
   float: left;
+}
+.product__position:not(:nth-child(4n + 4)) {
+  margin-right: 30px;
+}
+.product__position:not(:nth-last-child(-n + 4)) {
+  margin-bottom: 30px;
 }
 .position__image { 
   background-color: #e9f0fd;
@@ -131,7 +136,10 @@ h1::first-letter {
   font-family: "Open Sans";
   color: #555252;
   max-width: 350px;
-  padding: 15px 15px 55px 15px;
+  margin-bottom: 55px;
+}
+.news__article:not(:last-child) {
+  margin-right: 30px;
 }
 .article__image { 
   padding: 0 0 8px 0;
@@ -154,7 +162,7 @@ h1::first-letter {
   font-size: 14px;
   line-height: 26px;
   letter-spacing: -0.28px;
-  padding: 20px 0 12px 0;
+  margin: 20px 0 12px 0;
 }
 .article__link { 
   display: inline-block;
