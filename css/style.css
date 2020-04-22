@@ -110,6 +110,7 @@ h1::first-letter {
   letter-spacing: -0.36px;
 }
 .position__name {
+  font-weight: 600;
   color: #fff;
   padding: 11px;
 }
@@ -155,7 +156,8 @@ h1::first-letter {
   letter-spacing: -0.28px;
   padding: 20px 0 12px 0;
 }
-.article__button { 
+.article__link { 
+  display: inline-block;
   color: #ffffff;
   font-size: 16px;
   font-weight: 300;
